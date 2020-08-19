@@ -16,4 +16,4 @@ metadata:
 rules:
 - apiGroups: ["*"]
   resources: ["*"]
-  verbs: ["view"]
+  verbs: ["get"]

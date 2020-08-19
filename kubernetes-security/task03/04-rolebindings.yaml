@@ -4,9 +4,8 @@ metadata:
   name: jane-rb
   namespace: dev
 subjects:
-- kind: User
+- kind: ServiceAccount
   name: jane
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
   name: admin
@@ -18,9 +17,8 @@ metadata:
   name: ken-rb
   namespace: dev
 subjects:
-- kind: User
+- kind: ServiceAccount
   name: ken
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
   name: view

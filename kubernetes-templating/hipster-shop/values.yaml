@@ -1,0 +1,9 @@
+redis:
+  usePassword: false
+  persistence:
+    enabled: false
+
+cartservice:
+  redis:
+    address: hipster-shop-redis-headless
+    port: 6379

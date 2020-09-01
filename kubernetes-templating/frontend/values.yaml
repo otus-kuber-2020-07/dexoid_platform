@@ -1,0 +1,11 @@
+replicas: 1
+
+containerPort: 8080
+
+service:
+  port: 80
+  type: ClusterIP
+  nodePort: 30001
+
+image:
+  tag: v0.1.3

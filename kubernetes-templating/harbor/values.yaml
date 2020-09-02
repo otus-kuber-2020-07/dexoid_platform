@@ -1,0 +1,8 @@
+expose:
+  ingress:
+    hosts:
+      core: harbor.00aa.ru
+    annotations:
+      cert-manager.io/cluster-issuer: "letsencrypt-production"
+notary:
+  enabled: false

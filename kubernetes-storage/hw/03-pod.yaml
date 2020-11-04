@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: storage-pod
+spec:
+  containers:
+  - name: mycontainer
+    image: dexoid/homework1:v2
+    volumeMounts:
+    - mountPath: "/data"
+      name: data
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: storage-pvc

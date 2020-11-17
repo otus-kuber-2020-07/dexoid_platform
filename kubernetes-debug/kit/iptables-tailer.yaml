@@ -28,8 +28,6 @@
               - name: "IPTABLES_LOG_PREFIX"
                 # log prefix defined in your iptables chains
                 value: "calico-packet:"
-              - name: "POD_IDENTIFIER"
-                value: "name_with_namespace"
             image: "virtualshuric/kube-iptables-tailer:8d4296a"
             imagePullPolicy: Always
             volumeMounts: 

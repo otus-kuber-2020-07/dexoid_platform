@@ -24,9 +24,7 @@
               - name: "JOURNAL_DIRECTORY"
                 value: "/var/log/journal"
               - name: "POD_IDENTIFIER"
-                value: "label"
-              - name: "POD_IDENTIFIER_LABEL"
-                value: "netperf-type"
+                value: "name"
               - name: "IPTABLES_LOG_PREFIX"
                 # log prefix defined in your iptables chains
                 value: "calico-packet:"
